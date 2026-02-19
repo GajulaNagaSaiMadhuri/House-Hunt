@@ -74,9 +74,18 @@
 
     </div>
 </div>
-
+<SCRIPT>
+const buttons=document.querySelectorAll(".book-btn");
+buttons.forEach(button => {
+    button.addEventListener("click",()=>
+        {
+            alert("Booking request sent successfully!");
+        });
+});
+</SCRIPT>
 </body>
 </html>
+
 
 
 
