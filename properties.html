@@ -25,15 +25,8 @@
                     <h5>2BHK Apartment</h5>
                     <p>Location: Hyderabad</p>
                     <p>Rent: ₹12,000</p>
-                    <button class="btn btn-primary w-100"
-                    onclick="bookProperty()">
-                    Book Now
-                    </button>
-                    <script>
-                        function bookProperty(){
-    alert("Booking request sent successfully!");
-}
-                    </script>
+                    <button onclick="bookNow('2 BHK Apartment')">Book Now </button>
+                   
                 </div>
             </div>
         </div>
@@ -45,12 +38,7 @@
                     <h5>3BHK Villa</h5>
                     <p>Location: Bangalore</p>
                     <p>Rent: ₹25,000</p>
-                    <button class="btn btn-primary w-100 onclick="bookProperty()">Book Now</button>
-                    <script>
-                        function bookProperty(){
-    alert("Booking request sent successfully!");
-}
-                    </script>
+                    <button onclick="bookNow('3 BHK Villa')">Book Now </button>
                 </div>
             </div>
         </div>
@@ -62,29 +50,21 @@
                     <h5>1BHK Flat</h5>
                     <p>Location: Chennai</p>
                     <p>Rent: ₹8,000</p>
-                    <button class="btn btn-primary w-100 onclick="bookProperty()">Book Now</button>
-                    <script>
-                        function bookProperty(){
-    alert("Booking request sent successfully!");
-}
-                    </script>
+                     <button onclick="bookNow('1 BHK Flat')">Book Now </button>
                 </div>
             </div>
         </div>
 
     </div>
 </div>
-<SCRIPT>
-const buttons=document.querySelectorAll(".book-btn");
-buttons.forEach(button => {
-    button.addEventListener("click",()=>
-        {
-            alert("Booking request sent successfully!");
-        });
-});
-</SCRIPT>
+<script>
+    function bookNow(propertytyType){
+        alert(propertyType+"booking request sent successfully!");
+    }
+</script>
 </body>
 </html>
+
 
 
 
